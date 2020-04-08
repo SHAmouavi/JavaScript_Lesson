@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+    constracitor()
+    calcuateArea()
+    logInfo()
+    calss methods
+    add.call() == to change the data of this
+    prototype
+    throw
+    rectangle
+ -->
+ <script>
+//  class Animal{
+// constructor(leg){
+//     this.legs = leg;
+// };
+// howManyLegs(){
+//     return this.legs;
+// }
+
+//  }
+//  var duck = new Animal(2);
+//  var dog = new Animal(4);
+//  console.log(duck.howManyLegs())
+
+// var datas;
+// try{
+
+// fetch("http://api.open-notify.org/astros.json")
+// .then(res => res.json)
+// .then(data => datas = data)
+// .then(() => formateData);
+
+// function formateData(){
+//     console.log(datas);
+// };
+// }
+// catch(error){
+// alert(error);
+// }finally{
+//     formateData();
+// }
+// /*
+// /////////////////////////////////////////
+//          easy way
+//             ||
+//             ||
+//             ||
+//             ||
+//             \/
+//             \/   
+// */
+
+// var datas ;
+// async function async (){
+// try{
+//     var res = await fetch("http://api.open-notify.org/astros.json");
+//     console.log(await res.json());
+// }catch(error){
+//     alert(error);
+// }
+// }
+// async ();
+
+
+///////////////////////////////////////////
+class body {
+    constructor(text, color, font){
+    this.text = text;
+    this.color = color;
+    this.font = font;
+    this.p = document.createElement('p');
+    };
+    apend(){
+        this.p.innerHTML = this.text;
+        this.p.style.color = this.color;
+        this.p.style.fontFamily = this.font;
+        document.body.appendChild(this.p);
+    }
+}
+let myp = new body("This is my p tag" , "green" , "fantasy");
+myp.apend();
+ </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const inventors = [
+        {first : "Albert",last : "Enistein",year : 1879, passed:1955},
+        {first : "Isaac",last : "Newton",year : 1643, passed:1727},
+        {first : "Galileo",last : "Galilei",year : 1564, passed:1642},
+        {first : "Maria",last : "Curie",year : 1867, passed:1934},
+        {first : "Johannes",last : "Kepler",year : 1571, passed:1630},
+        {first : "Nicollus",last : "Copernicus",year : 1437, passed:1543}
+    ];
+    const people = ["Beck, Glenn", "Becker , Carl", "Beckett, Smual","Beecher, Henry","Beethoren, Ludwig", "Begin, Menchem", "Belloc, Hilaive"];
+    //filer method
+    const fifteen = inventors.filter(function(inventors){
+        if(inventors.year >= 1500 && inventors.year < 1600){
+         return true;
+        }else{
+            return true;
+        }
+    });
+    // const fifteen = inventors.filter(inventors => inventors.year >= 1500 && inventors.year < 1600);
+    //////////////////////////////////////////////////////////////////
+    
+    
+    //map method
+    const fullNames = inventors.map(inventor => inventor.first + "" + inventor.last);
+    ///////////////////////////////////////////////////////////////////
+
+    
+    //sort method
+    const prototype = inventors.sort(function(a,b){
+        if(a.year > b.year){
+            return 1;
+        }else{
+            return -1;
+        };
+    });
+    const prototype = inventors.sort((a,b) => a.year > b.year ? 1 : -1);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

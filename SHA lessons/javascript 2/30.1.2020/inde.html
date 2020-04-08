@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// function getTodoList(Promise){
+//     try{
+//         var data = load_from_server();
+//         Promise.yes();
+//     }catch{
+//         Promise.no();
+//     }
+// };
+// var p = new Promise(no,yes);
+// function no (){
+//     on_error();
+// };
+// function yes (){
+//     show_task = (data);
+// };
+var datas;
+try{
+
+fetch("http://api.open-notify.org/astros.json")
+.then(res => res.json)
+.then(data => datas = data)
+.then(() => formateData);
+
+function formateData(){
+    console.log(datas);
+};
+}
+catch(error){
+alert(error);
+}finally{
+    formateData();
+}
+
+</script>
+
+
+
+    <!-- 
+    callback 
+    try && catch
+    promise
+    new && this
+    then
+    fetch
+    -->
+</body>
+</html>
